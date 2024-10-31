@@ -11,3 +11,341 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.body {
+  background-color: darkgrey;
+}
+
+.your-name-input {
+  margin-top: 100px;
+  margin-bottom: 7px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-game-btn {
+  width: 300px;
+  /* float: left; */
+}
+
+.container {
+  background-color: lightgrey;
+  height: 100vh;
+  width: 100%;
+}
+.left-col {
+  background-color: burlywood;
+}
+.right-col {
+  background-color: burlywood;
+  padding-top: 10px;
+}
+.zone {
+  height: 100vh;
+  background-color: wheat;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: rgba(255, 208, 0, 0.911);
+}
+.orange {
+  color: orange;
+}
+.blue {
+  color: rgb(18, 129, 255)
+}
+.green {
+  color: green;
+}
+.purple {
+  color: purple;
+}
+.pink {
+  color: palevioletred;
+}
+.grey {
+  color: grey;
+}
+.bold {
+  font-weight: bold;
+}
+.is-me {
+  border: 5px solid darkgreen !important;
+}
+
+.action-table td:nth-child(1), .action-table td:nth-child(2), .action-table td:nth-child(4) {
+  font-weight: bold;
+}
+
+.action-block div:nth-child(1) {
+  width: 130px;
+}
+
+.action-block div:nth-child(1) button {
+  margin-bottom: 5px;
+}
+
+.btn-action {
+  width: 110px;
+}
+
+tr:hover {
+  cursor: pointer;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.3); */
+}
+
+tbody tr:hover {
+  background-color: yellow;
+}
+
+.log-wrapper {
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 490px;
+  background-color: honeydew;
+  text-align: left;
+}
+.endgame-title {
+  font-size: 54px;
+  font-weight: bold;
+}
+
+.player-zone {
+  min-height: 220px;
+}
+
+.player {
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 250px;
+  min-height: 150px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: wheat;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.20);
+ 
+  /* (A3) DIMENSIONS + POSITION */
+  position: relative;
+
+  .player-wrapper {
+    display: flex;
+  }
+
+  .avatar {
+    width: 80px;
+    .avatar-img {
+      width: 60px;
+      height: 55px;
+    }
+  }
+  
+  .player-detail {
+    text-align: left;
+  }
+
+  .fa-user {
+    font-size: 50px;
+  }
+  .fa-cards {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 4px;
+  }
+
+  .hand-card-zone {
+    padding-top: 5px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    min-height: 92px;
+  }
+  .coin-zone {
+    /* border: 1px solid green; */
+    padding-top: 2px;
+    max-height: 60px;
+  }
+}
+
+.take-coin {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 0px;
+}
+
+.action-card-icon {
+  margin-top: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+.action-card-icon-md {
+  margin-top: -5px;
+  width: 65px;
+  height: 65px;
+}
+
+.action-card {
+  width: 55px;
+  height: 80px;
+  margin-bottom: 4px;
+  margin-right: 2px;
+  margin-left: 2px;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.2);
+}
+
+.action-card:hover {
+  cursor: pointer;
+}
+
+.action-card-sm {
+  width: 40px;
+  height: 55px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.action-card-md {
+  width: 72px;
+  height: 110px;
+}
+
+.revealed-card {
+  border: 2px solid red;
+}
+
+.back-of-card {
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0.2);
+}
+
+.select-emoji {
+  width: 40px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.bubble {
+  --r: 25px; /* the radius */
+  --t: 30px; /* the size of the tail */
+  
+  background: repeating-linear-gradient(45deg, #ff0000, #ff0000 1px, #ffffff 1px, #ffffff 10px);
+
+  position: absolute;
+  margin-left: -60px !important;
+  margin-top: -20px !important;
+  min-width: 100px;
+  min-height: 70px;
+  max-height: 70px;
+  max-width: 100px;
+  padding: 7px 0px 7px 0px;
+  -webkit-mask: 
+    radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+      var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+      calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+    radial-gradient(50% 50%,#000 98%,#0000 101%) 
+      0 0/var(--r) var(--r) space padding-box;
+  background: #fff;
+  color: #333;
+}
+
+.bubble-left {
+  --_d: 0%;
+  border-left: var(--t) solid #0000;
+  margin-right: var(--t);
+  place-self: start;
+}
+.bubble-right {
+  --_d: 100%;
+  border-right: var(--t) solid #0000;
+  margin-left: var(--t);
+  place-self: end;
+}
+
+.red-cross {
+  width: 70px;
+  position: absolute;
+  left: -2px;
+  top: 0px;
+  opacity: 0.8;
+}
+
+.coin {
+  width: 32px;
+}
+
+.coin:hover {
+  cursor: pointer;
+}
+
+.multi-coin {
+  width: 100px;
+}
+
+.multi-coin:hover {
+  cursor: pointer;
+}
+
+.modalTrigger {
+  display: none;
+}
+
+.btn-close {
+  float: right;
+  font-size: 3px;
+}
+
+.player-endgame {
+  width: 600px;
+  margin-bottom: 10px;
+  .player-wrapper {
+    margin-bottom: 5px;
+  }
+}
+
+
+.tooltip1 {}
+
+.tooltip2 {}
+
+.tooltip1 .tooltiptext, .tooltip2 .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color: #333;
+  border-radius: 6px;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid #ccc;
+
+  /* Position the tooltip */
+  position: absolute;
+  margin-left: -125px;
+  margin-top: -205px;
+  z-index: 1;
+}
+
+.tooltip1:hover .tooltiptext, .tooltip2:hover .tooltiptext {
+  visibility: visible;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+.blink_me_sec {
+  animation: blinker 0.5s linear 1;
+}
+
+.blink_me_few_sec {
+  animation: blinker 0.5s linear 2;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
